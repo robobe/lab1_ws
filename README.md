@@ -26,8 +26,13 @@ average rate: 9.996
 
 ```
 
-5. What is the different between rviz `fixed Frame`
+5. What is the different between **rviz** `fixed Frame`
   - world
   - base_link
 
-5a. update rviz config to work from `base_link` pont of view
+5a. update rviz config to work from `base_link` point of view (write new launch file)
+
+#### bonus
+1. different between 2.  /tf    /tf_static 
+2. which node publish `/tf_static `
+user@lap2:
