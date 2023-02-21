@@ -33,6 +33,6 @@ average rate: 9.996
 5a. update rviz config to work from `base_link` point of view (write new launch file)
 
 #### bonus
-1. What is the different between  `/tf`  and  `/tf_static` 
+1. What is the different between  /tf    /tf_static 
 2. which node publish and subscribe to `/tf_static `
 user@lap2:
