@@ -25,6 +25,7 @@ def generate_launch_description():
         executable='robot_state_publisher',
         parameters=[
             {
+                'use_sim_time': True,
                 'robot_description': robot_description
             }
         ]
