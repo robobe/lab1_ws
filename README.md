@@ -44,4 +44,4 @@ ros2 topic pub -1 /set_joint_trajectory trajectory_msgs/msg/JointTrajectory \
  joint_names: [slider_joint, arm_joint], \
  points: [  {positions: {0.8,0.6}} ]}'
 ```
-![](images/lab.png)
+![](images/lab3_trajectory_command.png)

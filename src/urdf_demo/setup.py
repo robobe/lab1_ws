@@ -25,6 +25,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            "simple_trajectory=urdf_demo.simple_trajectory:main"
         ],
     },
 )
