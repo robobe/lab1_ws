@@ -22,13 +22,16 @@
 4. Write launch file with new rviz config show the Range, Marker, 
    1. run marker_node
    2. run trajectory 
-5. Run rviz after gazebo launched , using Timer or other method
+5. Write launch file with new rviz config show IMU
+   1. set robot_descriptor `alpha` to 0.3 to view IMU axis better
+6. Run rviz after gazebo launched , using Timer or other method
 
 
 ## Tips
 - Don't forget to add optical link frame to fix camera coordinate frame [...]()
 
 ## To read
+- [imu](https://www.youtube.com/watch?v=GNjN51NvJ6s)
 - [Learn about event handlers in ROS 2 launch files](https://docs.ros.org/en/foxy/Tutorials/Intermediate/Launch/Using-Event-Handlers.html#event-handlers-example-launch-file)
 ## Result
 
@@ -48,5 +51,10 @@
       ros2 topic pub -1 /set_joint_trajectory trajectory_msgs/msg/JointTrajectory  '{header: {frame_id: world}, joint_names: [slider_joint, arm_joint],  points: [  {positions: {0.8,0.6}} ]}'
       ```
 
+5. Add Imu sensor
+- [launch_file](src/urdf_demo/launch/lab4_v4.launch.py)
+- [urdf file](src/urdf_demo/urdf/imu.urdf.xacro)
 
-5. [rviz with timer action ](src/urdf_demo/launch/lab4_v2.launch.py)
+![](images/rviz_with_imu.png)
+
+6. [rviz with timer action ](src/urdf_demo/launch/lab4_v2.launch.py)

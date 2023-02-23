@@ -5,6 +5,7 @@
     
     <xacro:include filename="utils.xacro" />
     <xacro:include filename="gazebo.xacro" />
+    <xacro:include filename="imu.urdf.xacro" />
 
     
 
