@@ -26,7 +26,8 @@ setup(
     entry_points={
         'console_scripts': [
             "simple_trajectory=urdf_demo.simple_trajectory:main",
-            "image_viewer=urdf_demo.simple_image_viewer:main"
+            "image_viewer=urdf_demo.simple_image_viewer:main",
+            "range_marker=urdf_demo.range_marker:main"
         ],
     },
 )

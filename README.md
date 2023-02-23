@@ -7,6 +7,7 @@
   - range
 - capture camera topic using cv_bridge 
 - more launch features
+- rviz markers
  
 ## Exercise
 1. Add sensors
@@ -16,8 +17,12 @@
       1. mount sensor opposite to the camera
    3. imu
       1. mount sensor with the range sensor
-2. Write simple node viewer 
-3. Run rviz after gazebo launched , using Timer or other method
+2. Write simple node viewer
+3. Write simple node publish Range reading as marker
+4. Write launch file with new rviz config show the Range, Marker, 
+   1. run marker_node
+   2. run trajectory 
+5. Run rviz after gazebo launched , using Timer or other method
 
 
 ## Tips
@@ -30,4 +35,18 @@
 ![](images/camera_tf_rviz_camera_coordinate.png)
 1. [check gazebo.xacro for sensor](src/urdf_demo/urdf/gazebo.xacro)
 2. [simple viewer](src/urdf_demo/urdf_demo/simple_image_viewer.py)
-3. [rviz with timer action ](src/urdf_demo/launch/lab4_v2.launch.py)
+3. [rviz range marker](build/urdf_demo/build/lib/urdf_demo/range_marker.py)
+4. [rviz marker launch](launch/urdf_demo/../../src/urdf_demo/launch/lab4_v3.launch.py)
+
+![](images/rviz_with_marker.png)
+
+
+
+
+!!! tip send joint_trajectory 
+      ```
+      ros2 topic pub -1 /set_joint_trajectory trajectory_msgs/msg/JointTrajectory  '{header: {frame_id: world}, joint_names: [slider_joint, arm_joint],  points: [  {positions: {0.8,0.6}} ]}'
+      ```
+
+
+5. [rviz with timer action ](src/urdf_demo/launch/lab4_v2.launch.py)
