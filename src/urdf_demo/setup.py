@@ -25,7 +25,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "simple_trajectory=urdf_demo.simple_trajectory:main"
+            "simple_trajectory=urdf_demo.simple_trajectory:main",
+            "image_viewer=urdf_demo.simple_image_viewer:main"
         ],
     },
 )
