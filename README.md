@@ -42,3 +42,10 @@ Package base structure with minimal urdf and launch file
 - tf2 introduction
 - using rviz `2D pose` to move robot `arm` 
   
+
+
+## [lab6](https://github.com/robobe/lab1_ws/tree/lab6)
+- Switch to ROS2_Control
+
+## [lab7](https://github.com/robobe/lab1_ws/tree/lab7)
+- first PID
