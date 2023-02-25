@@ -6,7 +6,10 @@
   - spawn model sdf file
   - worlds
 - TF
- 
+
+
+## To read
+- [Making a Mobile Robot #9 - Adding a Camera](https://articulatedrobotics.xyz/mobile-robot-9-camera/)
 ## Exercise
 1. Write launch file that spawn sdf model into gazebo
 
