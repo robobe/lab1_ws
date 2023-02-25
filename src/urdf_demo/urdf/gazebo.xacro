@@ -12,7 +12,7 @@
         <material>Gazebo/Orange</material>
     </gazebo>
 
-    <gazebo>
+    <!-- <gazebo>
         <plugin name="gazebo_ros_joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
             <update_rate>20</update_rate>
             <joint_name>slider_joint</joint_name>
@@ -24,7 +24,7 @@
         <plugin name="gazebo_ros_joint_pose_trajectory" filename="libgazebo_ros_joint_pose_trajectory.so">
             <update_rate>20</update_rate>
         </plugin>
-    </gazebo>
+    </gazebo> -->
 
     <joint name="camera_optical_joint" type="fixed">
         <origin xyz="0 0 0" rpy="-1.571 0 -1.571" />
