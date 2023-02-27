@@ -23,7 +23,7 @@
             <geometry>
                 <box size="0.02 0.02 0.02"/>
             </geometry>
-            <material name="iRobot/Red"/>
+            <material name="red"/>
         </visual>
         <inertial>
             <mass value="0.001" />

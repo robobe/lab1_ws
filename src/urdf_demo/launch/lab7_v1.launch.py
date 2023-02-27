@@ -85,12 +85,17 @@ def generate_launch_description():
         arguments=["velocity_controller"],
     )
 
+    imu_controller_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["imu_sensor_broadcaster"],
+    )
 
 
     delayed_controllers_spawner = RegisterEventHandler(
         event_handler=OnProcessStart(
             target_action=controller_manager,
-            on_start=[joint_broad_spawner, vel_controller_spawner],
+            on_start=[joint_broad_spawner, vel_controller_spawner, imu_controller_spawner],
         )
     )
 
