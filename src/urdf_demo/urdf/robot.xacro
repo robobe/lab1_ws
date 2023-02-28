@@ -83,34 +83,5 @@
             <origin xyz="${arm_length/2} 0 0" rpy="0 ${pi/2} 0"/>
         </xacro:inertial_cylinder>
     </link>
-    <joint name="camera_joint" type="fixed">
-        <origin xyz="${arm_length} 0 ${arm_radius + 0.075}" rpy="0 0 0"/>
-        <parent link="arm_link"/>
-        <child link="camera_link"/>
-    </joint>
-    <link name="camera_link">
-        <visual>
-            <origin xyz="-0.03 0 0" rpy="0 0 0"/>
-            <geometry>
-                <box size="0.06 0.15 0.15" />
-            </geometry>
-            <material name="white" />
-        </visual>
-        <visual>
-            <origin xyz="0.03 0 0" rpy="0 ${pi/2} 0"/>
-            <geometry>
-                <cylinder length="0.06" radius="0.04" />
-            </geometry>
-            <material name="blue" />
-        </visual>
-        <collision>
-            <origin xyz="0.0 0 0" rpy="0 0 0"/>
-            <geometry>
-                <box size="0.12 0.15 0.15" />
-            </geometry>
-        </collision>
-        <xacro:inertial_box mass="0.1" x="0.12" y="0.15" z="0.15">
-            <origin xyz="0.0 0 0" rpy="0 0 0"/>
-        </xacro:inertial_box>
-    </link>
+    
 </robot>

@@ -15,7 +15,7 @@ def generate_launch_description():
     
     base_link_color_arg = DeclareLaunchArgument(
             'base_link_color',
-            default_value='blue',
+            default_value='white',
             description='switch base link color between blue to  white')
 
     pkg = get_package_share_directory(PACKAGE)
